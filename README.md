@@ -6,7 +6,7 @@
     - The data set I selected are the 2012 AP Results from NYC high schools. The data included the DBN of the school, the school name, the number of AP test takers per school, the total number of AP exams taken per school, and the number of AP exams passed per school. It comes from NYC Open Data. 
         - [Link to data] (https://data.cityofnewyork.us/Education/2012-AP-Results/9ct9-prf9/data_preview)
     - The original file was CSV.
-- Table of Raw Data
+### Table of Raw Data
 | DBN     | SCHOOL NAME                                                   | Num of AP Test Takers | Num of AP Total Exams Taken | Num of AP Exams Passed |
 |---------|---------------------------------------------------------------|------------------------|-----------------------------|------------------------|
 | 01M292  | HENRY STREET SCHOOL FOR INTERNATIONAL STUDIES                | s                      | s                           | s                      |
@@ -73,7 +73,7 @@
 - The formula =COUNTIF(E2:E479, ">=0.5") calculates the count of schools where the pass rate is greater than or equal to 0.5. By focusing on schools with pass rates above or equal to 0.5, the statistic identifies the number of schools that have achieved a certain level of success in their AP programs. The total count is 57.
 - The formula =SUMIF(E2:E479, ">0.5", B2:B479) calculates the total number of AP test takers across all schools where the pass rate is greater than 0.5. This identifies how many students attend schools that are high achieving for AP exams. The number is 17626. 
 - The formula =MAXIFS(C2:C479, E2:E479, "<0.5") calculates the maximum number of AP exams taken at a school where the pass rate is less than 0.5. The statistic highlights the maximum level of AP participation among schools where student success in AP exams may be lower. The highest number of participants is 1056 amongst this group which is more than half the school with the highest passrate. 
-- Pivot Table
+### Pivot Table
 | SCHOOL NAME                                                          | Total |
 |----------------------------------------------------------------------|-------|
 | BROOKLYN TECHNICAL HIGH SCHOOL                                       | 3333  |
@@ -94,6 +94,7 @@
 
 The pivot table ranks schools by the number of Advanced Placement (AP) exams passed. This reveals which schools perform the best in regards to most AP exams passed. This allows for understanding on where schools may need to bolster their AP programs. It also reveals disparities within New York city schools, suggesting where additional resources—such as teaching staff, educational materials, or student support services—might be most effectively deployed. 
 
-- ! [Screenshot of a scatterplot demonstrating the relation between total number of exams taken and total number of exams passed at each school](data/chart.png)
+### Image
+! [Screenshot of a scatterplot demonstrating the relation between total number of exams taken and total number of exams passed at each school](data/chart.png)
 
 The scatter plot illustrates the relationship between the total number of AP exams taken and the number of exams passed at each school. Each point on the plot represents a school, with its position indicating both the volume of exams undertaken and the success rate in terms of exams passed. This visualization can help in understanding how exam participation levels relate to achievement rates across the schools. If there's anything else you'd like to explore or any other questions, feel free to ask!
